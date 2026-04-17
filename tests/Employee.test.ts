@@ -44,7 +44,7 @@ const testEmployees_3: Employee[] = [
 // Konstrukktor tesztelese
 describe("Konstruktor tesztelese", () => {
     it("A testEmployees_1 employee-kat tartalmaz, nem kene visszadobnia semmit sem", () => {
-        expect(() => new EmployeeStatistics(testEmployees_1)).not.toThrow(); // A copilotot kertem segitsegul a '.not.toThrow-hoz'. Hianyoztam az orakrol, most dolgozom vitest-el elosszor
+        expect(() => new EmployeeStatistics(testEmployees_1)).not.toThrow();
     });
     it("A testEmployees_2 employee-kat tartalmaz, nem kene visszadobnia semmit sem", () => {
         expect(() => new EmployeeStatistics(testEmployees_2)).not.toThrow();
