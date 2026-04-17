@@ -1,0 +1,16 @@
+{
+  "name": "egysegteszt",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "main": "index.ts",
+  "scripts": {
+    "test": "vitest"
+  },
+  "dependencies": {
+    "typescript": "^6.0.3",
+    "vitest": "^4.1.4"
+  }
+}
