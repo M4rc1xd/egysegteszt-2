@@ -1,8 +1,4 @@
-export interface Employee {
-	name: string;
-	age: number;
-	salary: number;
-}
+import type { Employee } from "./Employee.ts";
 
 export class EmployeeStatistics {
 	employee: Employee[];
@@ -21,7 +17,7 @@ export class EmployeeStatistics {
             throw new Error(`A 'getMaxSalary' nem tudott lefutni, a 'salary' valtozo tipusa: ${typeof maxSalary}`);
         } else {
             this.employee.forEach((emp: Employee) => {
-                if (emp.salary > maxSalary) {
+                if (emp.salary > maxSalary!) {
                     maxSalary = emp.salary;
                 };
             });
@@ -48,7 +44,7 @@ export class EmployeeStatistics {
             throw new Error(`A 'getHighestPaidEmployee' nem tudott lefutni, az 'Employee' tipusa: ${typeof highestPaidEmployee}`);
         } else {
             this.employee.forEach((emp: Employee) => {
-                if (emp.salary > highestPaidEmployee.salary) {
+                if (emp.salary > highestPaidEmployee!.salary) {
                     highestPaidEmployee = emp;
                 };
             });
